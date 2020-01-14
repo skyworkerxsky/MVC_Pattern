@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1F928F23CE5E6000456D51 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F928E23CE5E6000456D51 /* CommentCell.swift */; };
+		7C1F929123CE5FD600456D51 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F929023CE5FD600456D51 /* Comment.swift */; };
 		7C2D99AE23CE51F1007DA2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D99AD23CE51F1007DA2EE /* AppDelegate.swift */; };
 		7C2D99B023CE51F1007DA2EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D99AF23CE51F1007DA2EE /* SceneDelegate.swift */; };
-		7C2D99B223CE51F1007DA2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D99B123CE51F1007DA2EE /* ViewController.swift */; };
-		7C2D99B523CE51F1007DA2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D99B323CE51F1007DA2EE /* Main.storyboard */; };
+		7C2D99B223CE51F1007DA2EE /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D99B123CE51F1007DA2EE /* CommentsViewController.swift */; };
+		7C2D99B523CE51F1007DA2EE /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D99B323CE51F1007DA2EE /* Comments.storyboard */; };
 		7C2D99B723CE51F5007DA2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D99B623CE51F5007DA2EE /* Assets.xcassets */; };
 		7C2D99BA23CE51F5007DA2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2D99B823CE51F5007DA2EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C2D99AA23CE51F1007DA2EE /* MVC_Prjct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC_Prjct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1F928E23CE5E6000456D51 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		7C1F929023CE5FD600456D51 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		7C2D99AA23CE51F1007DA2EE /* MVC_N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC_N.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2D99AD23CE51F1007DA2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C2D99AF23CE51F1007DA2EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C2D99B123CE51F1007DA2EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C2D99B423CE51F1007DA2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C2D99B123CE51F1007DA2EE /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		7C2D99B423CE51F1007DA2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		7C2D99B623CE51F5007DA2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C2D99B923CE51F5007DA2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C2D99BB23CE51F5007DA2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +52,7 @@
 		7C2D99AB23CE51F1007DA2EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C2D99AA23CE51F1007DA2EE /* MVC_Prjct.app */,
+				7C2D99AA23CE51F1007DA2EE /* MVC_N.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +60,89 @@
 		7C2D99AC23CE51F1007DA2EE /* MVC_Prjct */ = {
 			isa = PBXGroup;
 			children = (
-				7C2D99AD23CE51F1007DA2EE /* AppDelegate.swift */,
-				7C2D99AF23CE51F1007DA2EE /* SceneDelegate.swift */,
-				7C2D99B123CE51F1007DA2EE /* ViewController.swift */,
-				7C2D99B323CE51F1007DA2EE /* Main.storyboard */,
-				7C2D99B623CE51F5007DA2EE /* Assets.xcassets */,
-				7C2D99B823CE51F5007DA2EE /* LaunchScreen.storyboard */,
-				7C2D99BB23CE51F5007DA2EE /* Info.plist */,
+				7C2D99C423CE5720007DA2EE /* Application */,
+				7C2D99C523CE576E007DA2EE /* Comments */,
+				7C2D99C923CE585F007DA2EE /* Supporting Files */,
 			);
 			path = MVC_Prjct;
+			sourceTree = "<group>";
+		};
+		7C2D99C123CE565F007DA2EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C2D99C223CE5667007DA2EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99B823CE51F5007DA2EE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C2D99C323CE5706007DA2EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99AD23CE51F1007DA2EE /* AppDelegate.swift */,
+				7C2D99AF23CE51F1007DA2EE /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C2D99C423CE5720007DA2EE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99C123CE565F007DA2EE /* Model */,
+				7C2D99C223CE5667007DA2EE /* View */,
+				7C2D99C323CE5706007DA2EE /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7C2D99C523CE576E007DA2EE /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99C823CE577F007DA2EE /* Model */,
+				7C2D99C723CE577A007DA2EE /* View */,
+				7C2D99C623CE5774007DA2EE /* Controller */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		7C2D99C623CE5774007DA2EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99B123CE51F1007DA2EE /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C2D99C723CE577A007DA2EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99B323CE51F1007DA2EE /* Comments.storyboard */,
+				7C1F928E23CE5E6000456D51 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C2D99C823CE577F007DA2EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C1F929023CE5FD600456D51 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C2D99C923CE585F007DA2EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C2D99B623CE51F5007DA2EE /* Assets.xcassets */,
+				7C2D99BB23CE51F5007DA2EE /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +162,7 @@
 			);
 			name = MVC_Prjct;
 			productName = MVC_Prjct;
-			productReference = 7C2D99AA23CE51F1007DA2EE /* MVC_Prjct.app */;
+			productReference = 7C2D99AA23CE51F1007DA2EE /* MVC_N.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +205,7 @@
 			files = (
 				7C2D99BA23CE51F5007DA2EE /* LaunchScreen.storyboard in Resources */,
 				7C2D99B723CE51F5007DA2EE /* Assets.xcassets in Resources */,
-				7C2D99B523CE51F1007DA2EE /* Main.storyboard in Resources */,
+				7C2D99B523CE51F1007DA2EE /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +216,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2D99B223CE51F1007DA2EE /* ViewController.swift in Sources */,
+				7C1F929123CE5FD600456D51 /* Comment.swift in Sources */,
+				7C2D99B223CE51F1007DA2EE /* CommentsViewController.swift in Sources */,
 				7C2D99AE23CE51F1007DA2EE /* AppDelegate.swift in Sources */,
 				7C2D99B023CE51F1007DA2EE /* SceneDelegate.swift in Sources */,
+				7C1F928F23CE5E6000456D51 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C2D99B323CE51F1007DA2EE /* Main.storyboard */ = {
+		7C2D99B323CE51F1007DA2EE /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7C2D99B423CE51F1007DA2EE /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		7C2D99B823CE51F5007DA2EE /* LaunchScreen.storyboard */ = {
@@ -216,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +366,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKWSAD96UP;
-				INFOPLIST_FILE = MVC_Prjct/Info.plist;
+				INFOPLIST_FILE = "MVC_Prjct/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AM.MVC-Prjct";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVC_N;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -305,14 +385,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKWSAD96UP;
-				INFOPLIST_FILE = MVC_Prjct/Info.plist;
+				INFOPLIST_FILE = "MVC_Prjct/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AM.MVC-Prjct";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVC_N;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
